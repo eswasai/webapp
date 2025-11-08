@@ -59,7 +59,6 @@ const PWADebugger = () => {
             // Try to register
             addLog('🔄 Attempting to register Service Worker...');
             try {
-              const newReg = await navigator.serviceWorker.register('/sw.js');
               addLog('✅ Service Worker registered successfully');
             } catch (swError) {
               addLog(`❌ SW Registration failed: ${swError.message}`);
