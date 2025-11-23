@@ -65,7 +65,7 @@ const PWADebugger = () => {
             }
           }
         } catch (error) {
-          addLog(`❌ SW Check error: ${errors.message}`);
+          addLog(`❌ SW Check error: ${error.message}`);
         }
       } else {
         addLog('❌ Service Worker NOT supported');
